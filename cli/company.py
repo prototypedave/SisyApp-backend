@@ -29,9 +29,9 @@ def register_company_command(app):
             return
 
         company = CompanyModel(
-            company_name=company_name,
-            initial_amount=initial_amount,
-            current_amount=initial_amount
+            name=company_name,
+            initial_amount=int(initial_amount),
+            current_amount=int(initial_amount)
         )
 
         try:
