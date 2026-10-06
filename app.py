@@ -8,6 +8,7 @@ from .extensions import db, limiter
 from .models import UserModel, CompanyModel
 from .cli.owner import register_owner_command
 from .cli.sessions import register_session_commands
+from .cli.company import register_company_command
 from .routes import auth_bp
 from .routes.protected import protected_bp
 from .routes.customers import customers_bp
@@ -31,6 +32,7 @@ def create_app():
     limiter.init_app(app)
     register_owner_command(app)
     register_session_commands(app)
+    register_company_command(app)
     app.register_blueprint(auth_bp)
     app.register_blueprint(protected_bp)
     app.register_blueprint(customers_bp)
