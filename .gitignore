@@ -1,0 +1,62 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# Virtual Environments (DO NOT SEND TO GITHUB)
+# ==========================================
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Environment Variables & Secrets (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+secrets.json
+
+# ==========================================
+# IDEs and Text Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ==========================================
+# Distribution / Packaging
+# ==========================================
+dist/
+build/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# ==========================================
+# Testing and Coverage
+# ==========================================
+htmlcov/
+.toml
+.cache
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# ==========================================
+# Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints
